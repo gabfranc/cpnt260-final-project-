@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+
+body{
+  overflow: hidden;
+  background: #0a2239;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+header {
+  width: 45vh;
+  height: 45vh;
+  object-fit:cover;
+  overflow: visible;
+  background-image: #100a3c;
+  position: relative;
+  margin-top: 50vh;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+
+main{
+  position: absolute;
+  background: #0a2239;
+  margin-top: 100vh;
+  height: 70vh;
+  width: 80vh;
+  padding-top: 10vh;
+  font-weight: 700;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.calltoaction {
+  position: fixed;
+}
+
+main:hover {
+  transform: scale(1.1);
+  box-shadow: 6px 6px 0 #53A2BE;
+  background: linear-gradient(45deg, #0a2239, #1c588f, #5c88b1);
+  opacity: 75%;
+  transition: transform 0.3s ease-in-out;
+}
+img{
+  height: 30vh;
+  width: 40vh;
+  object-fit: cover;
+  margin-left: 20vh;
+  position: relative;
+}
+
+.logo {
+ display: flex;
+ position: relative;
+ margin-top: -85px;
+ margin-left: -25px;
+}
+
+svg{
+  height: 80px;
+}
+
+.message {
+  margin-top : 5vh;
+}
+
+
+
+.calltoaction a{
+  color: #53A2BE;
+  text-align: center;
+  text-decoration: none;
+  width: 40px;
+}
+
+.link {
+  margin-top: 10vh;
+}
+
+@media(max-width:750px) {
+
+  .logo {
+    margin-top: -60px;
+    margin-left: -95px;
+   }
+   
+  svg{
+    height: 50px;
+  }
+
+  main{
+    height: 50vh;
+    width: 50vh;
+    padding-top: 6vh;
+    font-weight: 600;
+  }
+  
+
+  img{
+    height: 25vh;
+    width: 35vh;
+    margin-left: 7.2vh;
+  }
+
+  .message {
+    margin-top : 5vh;
+    font-size: 12px;
+  }
+
+  .link {
+    margin-top: 4vh;
+    font-size: 12px;
+  }
+  
+}
